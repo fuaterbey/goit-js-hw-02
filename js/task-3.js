@@ -1,13 +1,19 @@
 function checkForSpam(message) {
 
-    const checking = message.toLowerCase().includes("sale" || "spam");
+    const checkingSale = message.toLowerCase().includes("sale");
+    const checkingSpam = message.toLowerCase().includes("spam");
 
-    if (checking) {
+    if (checkingSale) {
 
         return "Warning: This message contains forbidden words.";
 
     }
+    
+    else if (checkingSpam) {
+        return "Warning: This message contains forbidden words.";
 
+    }
+        
     else {
 
         return "You can safely open this message.";
