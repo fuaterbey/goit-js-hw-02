@@ -14,9 +14,15 @@ switch (country) {
         return "Shipping to Jamaica will cost 120 credits";
     
   default:
-    console.log("Sorry, there is no delivery to your country");
-    }
+        return "Sorry, there is no delivery to your country";
+        break;
+     }
     
 }
 
-   console.log(getShippingCost("China"));
+console.log(getShippingCost("Australia"));
+console.log(getShippingCost("Germany"));
+console.log(getShippingCost("China"));
+console.log(getShippingCost("Chile"));
+console.log(getShippingCost("Jamaica"));
+console.log(getShippingCost("Turkey"));
